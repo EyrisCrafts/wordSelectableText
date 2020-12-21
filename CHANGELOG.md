@@ -1,3 +1,7 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 12-21-2020
 
-* TODO: Describe initial release.
+initial release
+
+## [0.1.0] - 12-21-2020
+
+Fixed package description
