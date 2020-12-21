@@ -1,6 +1,6 @@
 name: word_selectable_text
-description: A new Flutter package project.
-version: 0.0.1
+description: The WordSelectableText widget gives an easy way to select and highlight words.
+version: 0.1.0
 homepage: https://github.com/K-Rafiki/wordSelectableText
 
 environment:
