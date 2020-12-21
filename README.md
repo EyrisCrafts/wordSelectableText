@@ -1,14 +1,19 @@
-# word_selectable_text
+# WordSelectableText 
 
-A new Flutter package project.
+This is a Text Widget that supports word highlighting and selection. 
+It provides an *onWordTapped* function that gives you access to the word selected by the user. 
 
-## Getting Started
+# HighLight Word
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+You can highlight the word in any color using the **highlightColor** argument. 
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+
+# Language support
+
+The widget uses a regex of alphabet set to select words. For English, regex used is **[a-zA-Z]** 
+
+# Example
+
+<p>
+    <img src="https://github.com/K-Rafiki/wordSelectableText/blob/master/screenshots/example.gif?raw=true"/>
+</p>

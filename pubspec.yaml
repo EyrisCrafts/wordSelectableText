@@ -1,7 +1,7 @@
 name: word_selectable_text
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/K-Rafiki/wordSelectableText
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
