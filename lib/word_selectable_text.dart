@@ -5,16 +5,16 @@ import 'package:flutter/material.dart';
 
 class WordSelectableText extends StatefulWidget {
   final String text;
-  final Function(String word, int index) onWordTapped;
+  final Function(String word, int? index)? onWordTapped;
   final bool highlight;
-  final Color highlightColor;
+  final Color? highlightColor;
   final String alphabets;
-  final TextStyle style;
+  final TextStyle? style;
   final TextDirection textDirection;
   final bool selectable;
   const WordSelectableText(
-      {Key key,
-      @required this.text,
+      {Key? key,
+      required this.text,
       this.onWordTapped,
       this.highlight = true,
       this.highlightColor,
@@ -29,8 +29,8 @@ class WordSelectableText extends StatefulWidget {
 }
 
 class _WordSelectableTextState extends State<WordSelectableText> {
-  int selectedWordIndex;
-  Color highlightColor;
+  int? selectedWordIndex;
+  Color? highlightColor;
   @override
   void initState() {
     selectedWordIndex = -1;
@@ -67,7 +67,7 @@ class _WordSelectableTextState extends State<WordSelectableText> {
                                 selectedWordIndex = i;
                               });
                               if (widget.onWordTapped != null)
-                                widget.onWordTapped(
+                                widget.onWordTapped!(
                                     wordList[i]
                                         .trim()
                                         .replaceAll(
@@ -105,7 +105,7 @@ class _WordSelectableTextState extends State<WordSelectableText> {
                                 selectedWordIndex = i;
                               });
                               if (widget.onWordTapped != null)
-                                widget.onWordTapped(
+                                widget.onWordTapped!(
                                     wordList[i]
                                         .trim()
                                         .replaceAll(
